@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<title>Controller</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.2/angular.js"></script>
+<script src="controller1.js"></script>
+</head>
+
+<body ng-controller="FirstCtrl as first">
+<input type="textbox" ng-model="first.greeting"></input>
+<div ng-class="first.greeting">
+{{first.greeting}} {{ "World" }}
+</div>
+</body>
+</html>
